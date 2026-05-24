@@ -1,5 +1,14 @@
+/*.zip
+/easy-react-tpl-osc
+/easy-react-tpl
+
+bun.lock
+/mpv-easy-scripts
 .million
 bun.lockb
+Cargo.lock
+
+.agent
 
 # Logs
 dist
