@@ -15,15 +15,11 @@ addForcedKeyBinding(
   ({ event }) => {
     if (event === 'down') {
       setPropertyNumber('speed', speed * scale);
+      showNotification(`X${scale}`, 1);
     }
-
     if (event === 'up') {
       setPropertyNumber('speed', speed);
       hideNotification();
-    }
-
-    if (event === 'press') {
-      showNotification(`X${scale}`);
     }
   },
   { complex: true }
