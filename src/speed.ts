@@ -15,7 +15,7 @@ addForcedKeyBinding(
   ({ event }) => {
     if (event === 'down') {
       setPropertyNumber('speed', speed * scale);
-      showNotification(`X${scale}`, 1);
+      showNotification(`X${scale}`, 0);
     }
     if (event === 'up') {
       setPropertyNumber('speed', speed);
