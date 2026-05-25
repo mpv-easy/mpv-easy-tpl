@@ -1,4 +1,4 @@
 {
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install && pnpm run build:osc",
   "startCommand": "pnpm run download"
 }
