@@ -30,7 +30,7 @@ async function triggerRebuild() {
   rebuildTimer = setTimeout(async () => {
     console.log("Changes detected, rebuilding...")
     try {
-      const { stdout, stderr } = await execAsync("pnpm run build", { cwd: CWD })
+      const { stdout, stderr } = await execAsync("pnpm run build:osc", { cwd: CWD })
       if (stdout) console.log(stdout.trim())
       if (stderr) console.error(stderr.trim())
       lastBuildTime = new Date().toLocaleString()
