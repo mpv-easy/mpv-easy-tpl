@@ -6,7 +6,7 @@ import { join, basename } from "node:path"
 
 const oscUrl =
   "https://raw.githubusercontent.com/ahaoboy/mpv-easy-cdn/main/mpv-v3-windows.tar.xz"
-const cacheDir = "./cache"
+const cacheDir = "./.cache"
 const cachePath = join(cacheDir, basename(oscUrl))
 const fileName = name.split("/").at(-1)!
 const scriptPath = `portable_config/scripts/${fileName}.js`
